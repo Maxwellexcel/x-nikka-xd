@@ -1,10 +1,10 @@
-import { handleMediaUpload } from './lib/catbox.js';
+import { handleMediaUpload } from '../lib/catbox.js';
 import { haki } from '#lib';
 haki(
   {
     pattern: "catbox",
     desc: "Upload an image to Catbox",
-    public: false,
+    public: true,
     type: "upload",
   },
   async (message, match) => {
